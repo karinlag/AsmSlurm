@@ -17,3 +17,19 @@ The following software is used in this pipeline:
 - SPAdes: genome assembly software
 
 
+###Structure
+
+There are several steps in this pipeline:
+
+1. fastqc is run on all input files
+  * Summary qualities are subsequently calculated
+1. trimmomatic is run on all input files
+1. fastqc is again run on the trimmomatic results
+  * Summary qualities are subsequently calculated
+1. spades is run on all input files
+  * Statistics is calculated on the resulting assemblies
+   
+   
+
+
+
